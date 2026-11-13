@@ -2,6 +2,15 @@
 
 This is a standalone, frontend-only prototype for sharing the interaction concept. It contains no backend, recognition model, model weights, training data, or production translation logic. The motion and capture indicators are synthetic; this is **not** a sign-language translator or recognizer.
 
+## Publish a public website
+
+1. Create a **public** GitHub repository named `ApertureSigns-Demo`. Do not upload the parent project's files; this `demo` folder is the complete, isolated site source.
+2. Push this folder's repository to the new repository's `main` branch.
+3. In the repository, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source if it is not already selected.
+4. Open **Actions** and wait for **Deploy demo to GitHub Pages** to complete. GitHub displays the website URL in the deployment details; for this repository name it will normally be `https://sirlennyjackson-commit.github.io/ApertureSigns-Demo/`.
+
+The workflow publishes only `index.html` and `demo.js`; it does not upload the rest of the repository. The website is publicly accessible from phones and other devices with internet access after deployment completes.
+
 ## Run locally
 
 From this directory, serve the static files:
